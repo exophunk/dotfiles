@@ -8,6 +8,7 @@ e_header "Installing Global Node Packages"
 packages=(
 	gulp
 	bower
+	eslint
 )
 
 npm install -g "${packages[@]}"
