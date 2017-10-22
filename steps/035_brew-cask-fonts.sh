@@ -23,6 +23,7 @@ fonts=(
 	font-source-code-pro
 	font-source-sans-pro
 	font-source-serif-pro
+	font-droid-sans
 )
 
 for font in "${fonts[@]}"; do

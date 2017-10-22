@@ -12,53 +12,53 @@ brew tap caskroom/drivers
 e_arrow "Installing cask apps"
 
 apps=(
-	1password
-	adobe-creative-cloud
-	alfred
-	appcleaner
-	bartender
-	beamer
-	colorsnapper
-	daisydisk
-	dash
-	dropbox
-	firefox
-	flash
-	flinto
-	flux
-	google-chrome
-	harvest
-	imageoptim
-	istat-menus
-	iterm2
-	kap
-	macid
-	microsoft-office
-	postman
-	principle
-	qlcolorcode
-	qlimagesize
-	qlmarkdown
-	qlstephen
-	quicklook-csv
-	quicklook-json
-	recordit
-	sequel-pro
-	sketch
-	skype
-	slack
-	sonos
-	soundnode
-	sourcestree
-	spectacle
-	spotify
-	sublime-text
-	teamviewer
-	torbrowser
-	transmission
-	vagrant
-	virtualbox
-	vlc
+	1password                # Password App
+	adobe-creative-cloud     # Adobe
+	alfred                   # Task Runner
+	appcleaner               # App Cleaner
+	bartender                # Organize MacOS Bar
+	beamer                   # Stream to Chromcast
+	colorsnapper             # Pick Colors on screen
+	daisydisk                # Analyze Disk usage
+	dash                     # Dev Docs
+	dropbox                  # File Cloud
+	firefox                  # Browser
+	flash                    # Stupid old flash
+	flinto                   # Animation prototyping
+	flux                     # Healthy screen colors
+	google-chrome            # Browser
+	harvest                  # Time tracking
+	imageoptim               # Image Optimization
+	istat-menus              # CPU & RAM Usage etc
+	iterm2                   # Terminal
+	kap                      # Screen Capture
+	macid                    # Unlock mac via phone etc
+	microsoft-office         # MS Office
+	postman                  # API Reqeust Tester
+	principle                # Animation prototyping
+	qlcolorcode              # Quicklook Addon for colored code
+	qlimagesize              # Quicklook Addon that shows image size
+	qlmarkdown               # Quicklook Addon for Markdown
+	qlstephen                # Quicklook Addon for Plain files
+	quicklook-csv            # Quicklook Addon for CSV
+	quicklook-json           # Quicklook Addon for JSON
+	recordit                 # Quick Screen capture
+	sequel-pro               # DB managment
+	sketch                   # Design tool
+	skype                    # Communication
+	slack                    # Communication
+	sonos                    # Speaker control
+	soundnode                # Soundcloud Desktop App
+	sourcestree              # Git Management
+	spectacle                # Window management with keys
+	spotify                  # Sound App
+	sublime-text             # Coding editor
+	teamviewer               # Remote control
+	torbrowser               # Browser
+	utorrent                 # Torrent
+	vagrant                  # Virtual machine
+	virtualbox               # Virtual machine
+	vlc                      # Video player
 )
 
 for app in "${apps[@]}"; do
