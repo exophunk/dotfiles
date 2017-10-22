@@ -2,8 +2,6 @@
 # FORMATED OUTPUT                                                             #
 ###############################################################################
 
-#!/usr/bin/env bash
-
 # Borrowed from 
 # https://natelandau.com/bash-scripting-utilities/
 # https://github.com/brandonb927/dotfiles/blob/master/utils.sh
