@@ -18,12 +18,13 @@ apps=(
 	appcleaner               # App Cleaner
 	bartender                # Organize MacOS Bar
 	beamer                   # Stream to Chromcast
+	ccleaner                 # cleanup tool
 	colorsnapper             # Pick Colors on screen
 	daisydisk                # Analyze Disk usage
 	dash                     # Dev Docs
 	dropbox                  # File Cloud
 	firefox                  # Browser
-	flash                    # Stupid old flash
+	flash-player             # Stupid old flash
 	flinto                   # Animation prototyping
 	flux                     # Healthy screen colors
 	google-chrome            # Browser
@@ -49,12 +50,13 @@ apps=(
 	slack                    # Communication
 	sonos                    # Speaker control
 	soundnode                # Soundcloud Desktop App
-	sourcestree              # Git Management
+	sourcetree              # Git Management
 	spectacle                # Window management with keys
 	spotify                  # Sound App
 	sublime-text             # Coding editor
 	teamviewer               # Remote control
 	torbrowser               # Browser
+	transmit                 # FTP browser
 	utorrent                 # Torrent
 	vagrant                  # Virtual machine
 	virtualbox               # Virtual machine
@@ -62,7 +64,7 @@ apps=(
 )
 
 for app in "${apps[@]}"; do
-    brew cask install --appdir="~/Applications" "${app}"
+    brew cask install --appdir="/Applications" "${app}"
 done
 
 brew cask cleanup
