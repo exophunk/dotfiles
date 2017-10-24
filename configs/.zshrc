@@ -62,7 +62,7 @@ source "$(brew --prefix nvm)/nvm.sh"
 alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)"'
 
 # update everything
-alias updateall='softwareupdate -ia && brew update && brew upgrade && && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)" gem update && npm --silent --global update'
+alias updateall='softwareupdate -ia && brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)" gem update && npm --silent --global update'
 
 #show/hidefile switch
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
