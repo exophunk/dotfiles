@@ -13,7 +13,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # oh-my-zsh
 ZSH=${HOME}/.oh-my-zsh # config dir
 DISABLE_UPDATE_PROMPT=true # auto-update without prompting
-ZSH_THEME="robbyrussell" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
+ZSH_THEME="af-magic" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
 
 # plugins to load
 plugins=(
