@@ -6,8 +6,8 @@
 e_header "Installing Utilities via Brew"
 
 binaries=(
-    coreutils          # macOS coreutils is outdated
     ansiweather        # Weather information
+    coreutils          # macOS coreutils is outdated
     cpulimit           # Limits cpu usage of processes
     fcrackzip          # Crack zip passwords
     ffmpeg             # video manipulation
@@ -19,6 +19,7 @@ binaries=(
     jp2a               # jpeg to ascii
     m-cli              # macOS cli tool
     mackup             # app & os configuration backup tool
+    nano               # terminal editor
     nmap               # network tools
     rename             # renaming tool
     speedtest-cli      # speed tester
