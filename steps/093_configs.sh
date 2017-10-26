@@ -21,3 +21,6 @@ cp ".nano" "${HOME}/.nano"
 e_arrow "Copy Homestead config"
 cp "config/homestead/after.sh" "${HOME}/workspace/Homestead/after.sh"
 cp "config/homestead/.homestead" "${HOME}/.homestead"
+
+e_arrow "Copy Sudoer Config for auto sudo oh homestead startup (when using nfs)"
+cp "config/vagrant-nfs-sudoer" "/etc/sudoers.d/vagrant-nfs-sudoer"
