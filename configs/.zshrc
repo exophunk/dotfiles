@@ -41,15 +41,7 @@ source ${ZSH}/oh-my-zsh.sh # load it
 # other settings
 unsetopt correct_all # disable autocorrect
 
-#export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-#export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin"
-#export PATH=$PATH:~/.composer/vendor/bin
-#export PATH=/usr/local/php5/bin:$PATH
-#export PATH=/Users/exophunk/.nvm/versions/node/v7.8.0/bin:$PATH
-#export PATH=$PATH:~/workspace/y7k/spark-installer
-#export GEM_HOME="$(brew --prefix)"
-#export LC_ALL=de_CH.UTF-8
-#setopt interactivecomments
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export LANG=de_CH.UTF-8
@@ -62,7 +54,7 @@ source "$(brew --prefix nvm)/nvm.sh"
 alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)"'
 
 # update everything
-alias updateall='softwareupdate -ia && brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)" gem update && npm --silent --global update'
+alias updateall='softwareupdate -ia && brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)" && gem update && npm --silent --global update'
 
 #show/hidefile switch
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
@@ -75,22 +67,22 @@ alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Copied to clipboard."'
 alias copypath="pwd | tr -d '\n' | pbcopy"
 alias copyfilelist='ls|pbcopy'
 
-#apps
+# shortcuts
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
-
-#folder jumps
-
 alias y7k="cd ~/workspace/y7k"
+alias y7kp="cd ~/workspace/y7k/projects"
+alias homesteadedit="st ~/workspace/Homestead/Homestead.yaml"
+alias zrc="subl ~/.zshrc"
+alias nwatch="nvm use && npm run watch"
+alias ycl="~/workspace/y7k/plates/cli/y7k"
+
+#git
+alias pullall='for dir in ./*/; do cd $dir && git pull;  cd .. ; done'
+alias devbranchall='for dir in ./*/; do cd $dir && git checkout develop;  cd .. ; done'
+
 unalias lt
 
-alias homesteadedit="st ~/workspace/Homestead/Homestead.yaml"
 
 function homestead() {
     ( cd ~/workspace/Homestead && vagrant $* )
 }
-
-alias ycl="~/workspace/y7k/y7k-cli/y7k"
-
-alias serve="python -m SimpleHTTPServer 3003"
-
-alias nwatch="nvm use && npm run watch"
