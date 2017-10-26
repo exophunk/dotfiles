@@ -61,6 +61,7 @@ apps=(
 	vagrant                  # Virtual machine
 	virtualbox               # Virtual machine
 	vlc                      # Video player
+	betterzipql              # Quicklook for zip
 )
 
 for app in "${apps[@]}"; do
