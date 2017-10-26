@@ -677,6 +677,9 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 # Auto-play videos when opened with QuickTime Player
 defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen -bool true
 
+# Allow text selection in quicklook preview
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE
+
 ###############################################################################
 # Mac App Store                                                               #
 ###############################################################################
