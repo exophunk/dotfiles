@@ -28,6 +28,7 @@ binaries=(
     webkit2png         # screenshot fulllength websites to png
     wifi-password      # show password of current wifi
     youtube-dl         # download youtube vid
+    dnsmasq            # Auto DNS config for dev in /etc/hosts
 )
 
 brew tap ravenac95/sudolikeaboss
