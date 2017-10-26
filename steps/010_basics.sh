@@ -28,4 +28,8 @@ e_success "Done!"
 # Install composer
 e_header "Installing composer"
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+e_arrow 'chown .composer directory'
+sudo chown -R $USER $HOME/.composer
+
 e_success "Done!"
