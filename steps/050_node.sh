@@ -9,6 +9,7 @@ packages=(
 	gulp
 	bower
 	eslint
+	electron
 )
 
 npm install -g "${packages[@]}"
