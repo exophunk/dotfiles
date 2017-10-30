@@ -1,6 +1,6 @@
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/z/.oh-my-zsh
+export ZSH=/Users/exophunk/.oh-my-zsh
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=3
@@ -15,40 +15,45 @@ ZSH=${HOME}/.oh-my-zsh # config dir
 DISABLE_UPDATE_PROMPT=true # auto-update without prompting
 ZSH_THEME="af-magic" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
 
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export LANG=de_CH.UTF-8
+
+#zsh-nvm options
+export NVM_AUTO_USE=true
+export NVM_LAZY_LOAD=true
+
 # plugins to load
 plugins=(
+	bower
 	brew
 	brew-cask
-	git
-	git-extras
-	history-substring-search
-	zsh-syntax-highlighting
-	bower
-	composer
 	common-aliases
+	composer
 	dircycle
 	dirhistory
 	dirpersist
 	encode64
+	git
+	git-extras
+	history-substring-search
 	last-working-dir
 	web-search
+	zsh-syntax-highlighting
     sublime
+    zsh-nvm
 )
 
-source ${ZSH}/oh-my-zsh.sh # load it
 
+source ${ZSH}/oh-my-zsh.sh # load it
 
 # other settings
 unsetopt correct_all # disable autocorrect
 
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export LANG=de_CH.UTF-8
-
-# NVM
-export NVM_DIR="${HOME}/.nvm"
-source "$(brew --prefix nvm)/nvm.sh"
+# NVM (disable direct, slow load, use zsh-nvm)
+#export NVM_DIR="${HOME}/.nvm"
+#source "$(brew --prefix nvm)/nvm.sh"
 
 # update homebrew
 alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)"'
@@ -73,16 +78,19 @@ alias y7k="cd ~/workspace/y7k"
 alias y7kp="cd ~/workspace/y7k/projects"
 alias homesteadedit="st ~/workspace/Homestead/Homestead.yaml"
 alias zrc="subl ~/.zshrc"
+alias zshreload="source ~/.zshrc"
 alias nwatch="nvm use && npm run watch"
 alias ycl="~/workspace/y7k/plates/cli/y7k"
+alias npmi="nvm use && npm install && npm run dev"
 
 #git
-alias pullall='for dir in ./*/; do cd $dir && git pull;  cd .. ; done'
-alias devbranchall='for dir in ./*/; do cd $dir && git checkout develop;  cd .. ; done'
+alias pullall='for dir in */; do cd $dir && git pull;  cd .. ; done'
+alias devbranchall='for dir in */; do cd $dir && git checkout develop;  cd .. ; done'
+alias puoa='git push origin --all'
 
 unalias lt
-
 
 function homestead() {
     ( cd ~/workspace/Homestead && vagrant $* )
 }
+
