@@ -18,6 +18,7 @@ apps=(
 	appcleaner               # App Cleaner
 	bartender                # Organize MacOS Bar
 	beamer                   # Stream to Chromcast
+	betterzipql              # Quicklook for zip
 	ccleaner                 # cleanup tool
 	colorsnapper             # Pick Colors on screen
 	daisydisk                # Analyze Disk usage
@@ -35,6 +36,7 @@ apps=(
 	kap                      # Screen Capture
 	macid                    # Unlock mac via phone etc
 	microsoft-office         # MS Office
+	namechanger              # Bulk renaming utility
 	postman                  # API Reqeust Tester
 	principle                # Animation prototyping
 	qlcolorcode              # Quicklook Addon for colored code
@@ -61,7 +63,6 @@ apps=(
 	vagrant                  # Virtual machine
 	virtualbox               # Virtual machine
 	vlc                      # Video player
-	betterzipql              # Quicklook for zip
 )
 
 for app in "${apps[@]}"; do
