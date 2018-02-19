@@ -9,11 +9,14 @@ binaries=(
     ansiweather        # Weather information
     coreutils          # macOS coreutils is outdated
     cpulimit           # Limits cpu usage of processes
+    dnsmasq            # Auto DNS config for dev in /etc/hosts
     fcrackzip          # Crack zip passwords
     ffmpeg             # video manipulation
     figlet             # text to ascii art
     git                # git version control
+    git-flow           # git flow addon
     graphicsmagick     # image manipulation
+    homebrew/php/php71-mcrypt # mcrypt for php 7.1 on macos sierra (needed for laravel composer sometimes)
     httpie             # rest http request sender
     hub                # improved github commands
     jp2a               # jpeg to ascii
@@ -28,7 +31,6 @@ binaries=(
     webkit2png         # screenshot fulllength websites to png
     wifi-password      # show password of current wifi
     youtube-dl         # download youtube vid
-    dnsmasq            # Auto DNS config for dev in /etc/hosts
 )
 
 brew tap ravenac95/sudolikeaboss
