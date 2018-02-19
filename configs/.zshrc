@@ -17,6 +17,7 @@ ZSH_THEME="af-magic" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export HOMEBREW_GITHUB_API_TOKEN="44e7d8a5ed705a04b354d46a989c7801f442cd24"
 export LANG=de_CH.UTF-8
 
 #zsh-nvm options
@@ -59,7 +60,7 @@ unsetopt correct_all # disable autocorrect
 alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)"'
 
 # update everything
-alias updateall='softwareupdate -ia && brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)" && gem update && npm --silent --global update'
+alias updateall='softwareupdate -ia && mas upgrade && brew update && brew upgrade && brew cu --all --cleanup --yes && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)" && npm --silent --global update'
 
 #show/hidefile switch
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
@@ -71,6 +72,9 @@ alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Copied to clipboard."'
 #useful
 alias copypath="pwd | tr -d '\n' | pbcopy"
 alias copyfilelist='ls|pbcopy'
+alias jpg2png='for i in *.jpg; do sips -s format png "${i}" --out "${i%jpg}png"; done'
+alias png2jpg='for i in *.png; do sips -s format jpg "${i}" --out "${i%png}jpg"; done'
+
 
 # shortcuts
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
@@ -82,11 +86,14 @@ alias zshreload="source ~/.zshrc"
 alias nwatch="nvm use && npm run watch"
 alias ycl="~/workspace/y7k/plates/cli/y7k"
 alias npmi="nvm use && npm install && npm run dev"
+alias dnsflush="sudo killall -HUP mDNSResponder"
 
 #git
+alias pullboth='git checkout master && git pull && git checkout develop && git pull'
 alias pullall='for dir in */; do cd $dir && git pull;  cd .. ; done'
 alias devbranchall='for dir in */; do cd $dir && git checkout develop;  cd .. ; done'
-alias puoa='git push origin --all'
+alias masterbranchall='for dir in */; do cd $dir && git checkout master;  cd .. ; done'
+alias puoa='git push origin --all && git push --tags'
 
 unalias lt
 
