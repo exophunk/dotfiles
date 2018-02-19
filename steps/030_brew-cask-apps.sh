@@ -8,6 +8,7 @@ e_header "Installing Applications via Brew"
 e_arrow "Installing cask and tapping"
 
 brew tap caskroom/drivers
+brew tap buo/cask-upgrade
 
 e_arrow "Installing cask apps"
 
@@ -63,6 +64,8 @@ apps=(
 	vagrant                  # Virtual machine
 	virtualbox               # Virtual machine
 	vlc                      # Video player
+	jaxx                     # Crypo wallet
+	numi                     # calculator
 )
 
 for app in "${apps[@]}"; do
