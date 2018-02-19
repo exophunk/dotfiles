@@ -14,6 +14,7 @@ sudo brew services start dnsmasq
 e_arrow "Create resolver"
 mkdir /etc/resolver
 sudo echo "nameserver 127.0.0.1" > /etc/resolver/dev
+sudo echo "nameserver 127.0.0.1" > /etc/resolver/test
 
 e_arrow "Restart dnsmasq service"
 sudo brew services restart dnsmasq
