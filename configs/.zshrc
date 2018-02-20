@@ -17,7 +17,7 @@ ZSH_THEME="af-magic" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export HOMEBREW_GITHUB_API_TOKEN="44e7d8a5ed705a04b354d46a989c7801f442cd24"
+export HOMEBREW_GITHUB_API_TOKEN="YOUR_GITHUB_TOKEN"
 export LANG=de_CH.UTF-8
 
 #zsh-nvm options
