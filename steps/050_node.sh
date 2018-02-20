@@ -24,6 +24,7 @@ packages=(
 	babel-eslint
 	electron
 	npm-check-updates
+	vue-cli
 )
 
 npm install -g "${packages[@]}"

@@ -34,10 +34,13 @@ apps=(
 	imageoptim               # Image Optimization
 	istat-menus              # CPU & RAM Usage etc
 	iterm2                   # Terminal
+	java                     # Java Runtime
+	jaxx                     # Crypo wallet
 	kap                      # Screen Capture
 	macid                    # Unlock mac via phone etc
 	microsoft-office         # MS Office
 	namechanger              # Bulk renaming utility
+	numi                     # calculator
 	postman                  # API Reqeust Tester
 	principle                # Animation prototyping
 	qlcolorcode              # Quicklook Addon for colored code
@@ -64,8 +67,6 @@ apps=(
 	vagrant                  # Virtual machine
 	virtualbox               # Virtual machine
 	vlc                      # Video player
-	jaxx                     # Crypo wallet
-	numi                     # calculator
 )
 
 for app in "${apps[@]}"; do
