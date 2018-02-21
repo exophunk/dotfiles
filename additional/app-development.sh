@@ -26,9 +26,30 @@ sudo gem install cocoapods
 
 
 
+
+e_header "Installing Utilities via Brew"
+
+binaries=(
+    gradle
+)
+
+
+for binary in "${binaries[@]}"; do
+  brew install "${binary}"
+done
+
+
+brew cleanup
+
+e_success "Done!"
+
+
+
+
 e_arrow "Installing cask apps"
 
 apps=(
+    java8
     android-studio
 )
 
@@ -40,3 +61,10 @@ brew cask cleanup
 
 
 e_success "Done!"
+
+
+
+
+
+
+

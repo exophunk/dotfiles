@@ -36,7 +36,6 @@ apps=(
 	imageoptim               # Image Optimization
 	istat-menus              # CPU & RAM Usage etc
 	iterm2                   # Terminal
-	java                     # Java Runtime
 	jaxx                     # Crypo wallet
 	kap                      # Screen Capture
 	microsoft-office         # MS Office
