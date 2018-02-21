@@ -13,6 +13,8 @@ brew tap buo/cask-upgrade
 e_arrow "Installing cask apps"
 
 apps=(
+	#macid                    # Unlock mac via phone etc
+	#qlimagesize              # Quicklook Addon that shows image size             # Doesnt work
 	1password                # Password App
 	adobe-creative-cloud     # Adobe
 	alfred                   # Task Runner
@@ -37,14 +39,12 @@ apps=(
 	java                     # Java Runtime
 	jaxx                     # Crypo wallet
 	kap                      # Screen Capture
-	macid                    # Unlock mac via phone etc
 	microsoft-office         # MS Office
 	namechanger              # Bulk renaming utility
 	numi                     # calculator
 	postman                  # API Reqeust Tester
 	principle                # Animation prototyping
 	qlcolorcode              # Quicklook Addon for colored code
-	qlimagesize              # Quicklook Addon that shows image size
 	qlmarkdown               # Quicklook Addon for Markdown
 	qlstephen                # Quicklook Addon for Plain files
 	quicklook-csv            # Quicklook Addon for CSV
@@ -56,9 +56,10 @@ apps=(
 	slack                    # Communication
 	sonos                    # Speaker control
 	soundnode                # Soundcloud Desktop App
-	sourcetree              # Git Management
+	sourcetree               # Git Management
 	spectacle                # Window management with keys
 	spotify                  # Sound App
+	standard-notes           # Privacy Notes App 
 	sublime-text             # Coding editor
 	teamviewer               # Remote control
 	torbrowser               # Browser
