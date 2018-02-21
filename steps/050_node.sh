@@ -7,7 +7,6 @@ e_header "Installing different node versions"
 
 nvm install v6.3.1
 nvm install v6.4.0
-nvm install v7.2.1
 nvm install v7.3.0
 nvm use default
 
@@ -38,18 +37,16 @@ npm config set save true
 
 
 
-e_header "Copy global packages to other versions"
+e_header "Copy some global packages to other versions"
 
 nvm use v6.3.1
-nvm reinstall-packages default
+# nvm reinstall-packages default
+npm install -g gulp bower
 
 nvm use v6.4.0
-nvm reinstall-packages default
-
-nvm use v7.2.1
-nvm reinstall-packages default
+nvm reinstall-packages v6.3.1
 
 nvm use v7.3.0
-nvm reinstall-packages default
+nvm reinstall-packages v6.3.1
 
 nvm use default
