@@ -48,6 +48,8 @@ e_success "Done!"
 
 e_arrow "Installing cask apps"
 
+brew tap caskroom/versions
+
 apps=(
     java8
     android-studio
