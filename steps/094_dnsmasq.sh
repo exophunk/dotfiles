@@ -6,7 +6,7 @@
 e_header "Configure dnsmasq"
 
 e_arrow "Copy dnsmasq config"
-cp "config/dnsmasq.conf" "/usr/local/etc/dnsmasq.conf"
+cp "configs/dnsmasq.conf" "/usr/local/etc/dnsmasq.conf"
 
 e_arrow "Set dnsmasq as service"
 sudo brew services start dnsmasq
