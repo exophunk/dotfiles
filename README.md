@@ -16,6 +16,14 @@ Use to setup new dev workstations
 
 ## More configurations
 
+### iTerm
+- In Preferences/Profiles/Colors, select "Solarized Dark" as Color Preset
+
+### Open Finder Button in Finder
+- Checkout http://hohonuuli.blogspot.ch/2016/02/iterm2-version-3-open-iterm-here-script.html
+- The App is already in `Dropbox (Private)/Configs/open_iterm_from_finder.app`
+
+
 ### Configure homestead/vagrant
 
 Run `vagrant-setup.sh` from your host or `vagrant-commands.sh` directly from the VM to configure homestead box (config and adding additional packages)
