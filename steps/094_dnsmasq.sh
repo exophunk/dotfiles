@@ -6,15 +6,15 @@
 e_header "Configure dnsmasq"
 
 e_arrow "Copy dnsmasq config"
-cp "configs/dnsmasq.conf" "/usr/local/etc/dnsmasq.conf"
+sudo cp "configs/dnsmasq.conf" "/usr/local/etc/dnsmasq.conf"
 
 e_arrow "Set dnsmasq as service"
 sudo brew services start dnsmasq
 
 e_arrow "Create resolver"
-mkdir /etc/resolver
-sudo echo "nameserver 127.0.0.1" > /etc/resolver/dev
-sudo echo "nameserver 127.0.0.1" > /etc/resolver/test
+sudo mkdir /etc/resolver
+sudo sh -c "echo 'nameserver 127.0.0.1' >> /etc/resolver/dev"
+sudo sh -c "echo 'nameserver 127.0.0.1' >> /etc/resolver/test"
 
 e_arrow "Restart dnsmasq service"
 sudo brew services restart dnsmasq
