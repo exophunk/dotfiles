@@ -65,13 +65,17 @@ apps=(
 	transmit                 # FTP browser
 	utorrent                 # Torrent
 	vagrant                  # Virtual machine
-	virtualbox               # Virtual machine
 	vlc                      # Video player
 )
 
 for app in "${apps[@]}"; do
     brew cask install --appdir="/Applications" "${app}"
 done
+
+
+# Virtualbox need xcode licence to be accepted
+sudo xcodebuild -licence accept
+brew cask install virtualbox --appdir="/Applications" "${app}"
 
 brew cask cleanup
 
