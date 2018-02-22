@@ -24,3 +24,8 @@ cp "config/homestead/.homestead" "${HOME}/.homestead"
 
 e_arrow "Copy Sudoer Config for auto sudo oh homestead startup (when using nfs)"
 cp "config/vagrant-nfs-sudoer" "/etc/sudoers.d/vagrant-nfs-sudoer"
+
+
+e_arrow "Copy Dock config"
+/bin/cp -f "config/com.apple.dock.plist" "${HOME}/Library/Preferences"
+defaults read "${HOME}/Library/Preferences/com.apple.dock.plist"
