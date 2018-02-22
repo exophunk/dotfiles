@@ -1,6 +1,8 @@
 
+export USER=/Users/exophunk
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/exophunk/.oh-my-zsh
+export ZSH=${USER}/.oh-my-zsh
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=3
@@ -15,10 +17,13 @@ ZSH=${HOME}/.oh-my-zsh # config dir
 DISABLE_UPDATE_PROMPT=true # auto-update without prompting
 ZSH_THEME="af-magic" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
 
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$USER/Library/Android/sdk/platform-tools:$USER/Library/Android/sdk/tools:$USER/Library/Android/sdk/tools/bin"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HOMEBREW_GITHUB_API_TOKEN="YOUR_GITHUB_TOKEN"
+export ANDROID_HOME="$USER/Library/Android/sdk"
 export LANG=de_CH.UTF-8
+
+
 
 #zsh-nvm options
 export NVM_AUTO_USE=true
