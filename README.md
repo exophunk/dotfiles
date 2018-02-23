@@ -16,6 +16,12 @@ Use to setup new dev workstations
 
 ## More configurations
 
+
+### Email
+- For `ch-dns.net` Emails, add IMAP-prefix "INBOX" to Email Accounts
+- Go to Email -> Settings -> Accounts -> Server Settings -> "Erweiterte IMAP Einstellungen"
+- Restart Mail
+
 ### iTerm
 - In Preferences/Profiles/Colors, select "Solarized Dark" as Color Preset
 
@@ -26,12 +32,29 @@ Use to setup new dev workstations
 
 ### Configure homestead/vagrant
 
-Run `vagrant-setup.sh` from your host or `vagrant-commands.sh` directly from the VM to configure homestead box (config and adding additional packages)
+- Run `vagrant box add laravel/homestead` to install homestead
+- Make sure previous homestead steps are successful, Homestead repo is installed and Homestead.yaml is correct
+- Run homestead successfully first
+- Check if dnsmasq works correctly, so your .dev & .test domains are routed
+- Run `vagrant-setup.sh` from your host or `vagrant-commands.sh` directly from the VM to configure homestead box (config and adding additional packages)
 
-### nginx configs
+### Copy Homestead databases
+- run `mysqldump -v -uroot -p --all-databases > workspace/alldb.sql` inside homestead VM to export all databases to the `workspace` folder. (Default homestead pw is `secret`)
+- run `mysql -u root -p < workspace/alldb.sql` on new machine (inside homestead VM)
+
+### homestead nginx configs
 Add custom nginx-files to ~/.homestead/nginx-configs
 
+### Copy keychains
 
+#### Sequel Pro Example
+1. Open Keychain
+2. Search for "Sequel Pro" and copy all items
+3. Create new keychain and safe it somewhere (eg dropbox)
+4. Paste all the items
+5. Open the keychain on new machine
+6. Unlock the chain and copy back all items from the keychain to "Login/Anmeldung" chain
+7. Open  Sequel Pro and go trough the favourites (you migrated them before via Mackup already). Allow all keychain access questions.
 
 
 ## Inspired by
