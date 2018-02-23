@@ -13,7 +13,7 @@ mas install 409201541 # Pages
 mas install 409183694 # Keynotes
 mas install 409203825 # Numbers
 mas install 668208984 # Giphy Gifmaker
-mas install 426899026 # Memory Clean 2
+mas install 1114591412 # Memory Clean 2
 
 
 e_success "Done!"
