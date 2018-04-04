@@ -19,7 +19,7 @@ ZSH_THEME="af-magic" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$USER/Library/Android/sdk/platform-tools:$USER/Library/Android/sdk/tools:$USER/Library/Android/sdk/tools/bin"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export HOMEBREW_GITHUB_API_TOKEN="YOUR_GITHUB_TOKEN"
+export HOMEBREW_GITHUB_API_TOKEN="82c663414c9b2c7f60118f0a1ecb955feaf3997a"
 export ANDROID_HOME="$USER/Library/Android/sdk"
 export LANG=de_CH.UTF-8
 
@@ -65,7 +65,8 @@ unsetopt correct_all # disable autocorrect
 alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)"'
 
 # update everything
-alias updateall='softwareupdate -ia && mas upgrade && brew update && brew upgrade && brew cu --all --cleanup --yes && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)" && npm --silent --global update'
+alias updateall='softwareupdate -ia && mas upgrade && brew update && brew upgrade && brew cu --all --cleanup --yes && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)" && npm --global update && composer global update'
+alias updatebrews='brew update && brew upgrade && brew cu --all --cleanup --yes && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)"'
 
 #show/hidefile switch
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
@@ -78,7 +79,7 @@ alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Copied to clipboard."'
 alias copypath="pwd | tr -d '\n' | pbcopy"
 alias copyfilelist='ls|pbcopy'
 alias jpg2png='for i in *.jpg; do sips -s format png "${i}" --out "${i%jpg}png"; done'
-alias png2jpg='for i in *.png; do sips -s format jpg "${i}" --out "${i%png}jpg"; done'
+alias png2jpg='for i in *.png; do sips -s format jpeg "${i}" --out "${i%png}jpg"; done'
 
 
 # shortcuts
