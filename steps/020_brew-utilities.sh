@@ -27,6 +27,7 @@ binaries=(
     nmap               # network tools
     php                # brew based php
     rename             # renaming tool
+    s3cmd              # S3 Manager
     speedtest-cli      # speed tester
     sudolikeaboss      # 1password passwords directly in iTerm2
     tree               # show directory as tree
