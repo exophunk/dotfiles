@@ -28,6 +28,7 @@ apps=(
 	dash                     # Dev Docs
 	dropbox                  # File Cloud
 	firefox                  # Browser
+	firefox-developer-edition # Browser
 	flash-player             # Stupid old flash
 	flinto                   # Animation prototyping
 	flux                     # Healthy screen colors
@@ -61,11 +62,14 @@ apps=(
 	standard-notes           # Privacy Notes App 
 	sublime-text             # Coding editor
 	teamviewer               # Remote control
+	the-unarchiver           # Zipfile tool
 	torbrowser               # Browser
 	transmit                 # FTP browser
+	tunnelblick			     # Open VPN Client
 	utorrent                 # Torrent
 	vagrant                  # Virtual machine
 	vlc                      # Video player
+	whatsapp                 # Messenger
 )
 
 for app in "${apps[@]}"; do
