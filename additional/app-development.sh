@@ -16,6 +16,8 @@ nvm use default
 packages=(
     ios-deploy
     cordova
+    monaca
+    splashicon-generator
 )
 
 npm install -g "${packages[@]}"
