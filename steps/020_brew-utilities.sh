@@ -23,7 +23,9 @@ binaries=(
     m-cli              # macOS cli tool
     mackup             # app & os configuration backup tool
     nano               # terminal editor
+    nginx              # Webserver (for valet)
     nmap               # network tools
+    php                # brew based php
     rename             # renaming tool
     speedtest-cli      # speed tester
     sudolikeaboss      # 1password passwords directly in iTerm2
@@ -41,6 +43,8 @@ done
 
 brew install imagemagick --with-webp
 brew install yarn --without-node
+
+brew link --overwrite php
 
 brew cleanup
 
