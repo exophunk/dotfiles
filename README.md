@@ -18,7 +18,8 @@ Use to setup new dev workstations
 
 
 ### ssh keys
-Copy over ssh keys from old computer (copy `~/.ssh` folder)
+- Copy over ssh keys from old computer (copy `~/.ssh` folder)
+Run `ssh-add -K` to add ssh passphrase to keychain
 
 ### Sourcetree
 Start app, accept everything and add github + bitbucket accounts
