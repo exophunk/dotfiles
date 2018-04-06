@@ -19,7 +19,7 @@ ZSH_THEME="af-magic" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$USER/Library/Android/sdk/platform-tools:$USER/Library/Android/sdk/tools:$USER/Library/Android/sdk/tools/bin"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export HOMEBREW_GITHUB_API_TOKEN="82c663414c9b2c7f60118f0a1ecb955feaf3997a"
+export HOMEBREW_GITHUB_API_TOKEN=""
 export ANDROID_HOME="$USER/Library/Android/sdk"
 export LANG=de_CH.UTF-8
 
