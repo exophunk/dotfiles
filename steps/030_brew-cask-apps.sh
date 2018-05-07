@@ -13,6 +13,7 @@ brew tap buo/cask-upgrade
 e_arrow "Installing cask apps"
 
 apps=(
+	# tunnelblick			     # Open VPN Client
 	#macid                    # Unlock mac via phone etc
 	#qlimagesize              # Quicklook Addon that shows image size             # Doesnt work
 	1password                # Password App
@@ -44,6 +45,8 @@ apps=(
 	numi                     # calculator
 	postman                  # API Reqeust Tester
 	principle                # Animation prototyping
+	protonmail-bridge        # ProtonMail Client Bridge
+	protonvpn				 # Proton VPN client
 	qlcolorcode              # Quicklook Addon for colored code
 	qlmarkdown               # Quicklook Addon for Markdown
 	qlstephen                # Quicklook Addon for Plain files
@@ -65,10 +68,11 @@ apps=(
 	the-unarchiver           # Zipfile tool
 	torbrowser               # Browser
 	transmit                 # FTP browser
-	tunnelblick			     # Open VPN Client
 	utorrent                 # Torrent
 	vagrant                  # Virtual machine
+	visual-studio-code		 # Code editor
 	vlc                      # Video player
+	wavebox					 # App Browser
 	whatsapp                 # Messenger
 )
 
