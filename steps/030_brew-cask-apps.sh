@@ -23,7 +23,7 @@ apps=(
 	bartender                # Organize MacOS Bar
 	beamer                   # Stream to Chromcast
 	betterzipql              # Quicklook for zip
-	ccleaner                 # cleanup tool
+	cleanmymac               # cleanup tool
 	colorsnapper             # Pick Colors on screen
 	daisydisk                # Analyze Disk usage
 	dash                     # Dev Docs
@@ -38,7 +38,7 @@ apps=(
 	imageoptim               # Image Optimization
 	istat-menus              # CPU & RAM Usage etc
 	iterm2                   # Terminal
-	jaxx                     # Crypo wallet
+	# jaxx                     # Crypo wallet
 	kap                      # Screen Capture
 	microsoft-office         # MS Office
 	namechanger              # Bulk renaming utility
@@ -74,6 +74,7 @@ apps=(
 	vlc                      # Video player
 	wavebox					 # App Browser
 	whatsapp                 # Messenger
+	deckset                  # Presentation tool
 )
 
 for app in "${apps[@]}"; do

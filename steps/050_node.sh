@@ -18,9 +18,9 @@ e_header "Installing Global Node Packages"
 packages=(
 	gulp
 	bower
-	eslint
-	eslint-plugin-vue
-	babel-eslint
+	# eslint
+	# eslint-plugin-vue
+	# babel-eslint
 	electron
 	npm-check-updates
 	vue-cli
