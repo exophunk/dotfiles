@@ -107,3 +107,7 @@ function homestead() {
     ( cd ~/workspace/Homestead && vagrant $* )
 }
 
+function homesteadssh() {
+    ( ssh vagrant@192.168.10.10 $* )
+}
+
